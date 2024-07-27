@@ -1,0 +1,2 @@
+import "D:/WORK/mirabox/mirabox-support/node_modules/@vuepress/highlighter-helper/lib/client/styles/base.css"
+import "D:/WORK/mirabox/mirabox-support/node_modules/@vuepress/plugin-prismjs/lib/client/styles/nord.css"

@@ -1,0 +1,18 @@
+/* 更改主色 */
+:root {
+    --c-brand: #000033; /* 将 #000033 更改为你想要的颜色 */
+    --c-brand-light: #000033;
+    --c-brand-dark: #000033;
+  
+    /* 其他颜色变量 */
+    --c-text: #2c3e50;
+    --c-bg: #ffffff;
+    --c-sidebar-bg: #f8f8f8;
+    --c-sidebar-color: #1c1c5a;
+    --c-link: #1c1c5a;
+    --c-link-hover: #1c1c5a;
+    --c-border: #eaecef;
+    --c-code-bg: #f8f8f8;
+
+
+  }
