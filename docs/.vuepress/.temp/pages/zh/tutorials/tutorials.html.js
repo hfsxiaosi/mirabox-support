@@ -1,5 +1,5 @@
 import comp from "D:/WORK/mirabox/mirabox-support/docs/.vuepress/.temp/pages/zh/tutorials/tutorials.html.vue"
-const data = JSON.parse("{\"path\":\"/zh/tutorials/tutorials.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"zh/tutorials/tutorials.md\"}")
+const data = JSON.parse("{\"path\":\"/zh/tutorials/tutorials.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1756523571000,\"contributors\":[{\"name\":\"xiaosi\",\"email\":\"512282129@qq.com\",\"commits\":1}]},\"filePathRelative\":\"zh/tutorials/tutorials.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

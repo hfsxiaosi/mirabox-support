@@ -45,12 +45,7 @@ export default defineUserConfig({
     //     },
     //     '/zh/': {
     //       placeholder: '搜索',
-    //     },
-    //   },
-    //   maxSuggestions: 100,
-    //   hotKeys: ['s', '/'],
-    // }),
-    // docsearchPlugin({
+    //     },// docsearchPlugin({
     //   appId: '你的应用ID',
     //   apiKey: '你的API密钥',
     //   indexName: '你的索引名称',
@@ -63,6 +58,11 @@ export default defineUserConfig({
     //     },
     //   },
     // })
+    //   },
+    //   maxSuggestions: 100,
+    //   hotKeys: ['s', '/'],
+    // }),
+    
   ],
   locales: {
     '/': {
