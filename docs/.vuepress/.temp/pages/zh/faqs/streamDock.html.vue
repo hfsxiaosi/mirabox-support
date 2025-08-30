@@ -1,134 +1,282 @@
-<template><div><h1 id="streamdock系列问题" tabindex="-1"><a class="header-anchor" href="#streamdock系列问题"><span><strong>streamDock系列问题</strong></span></a></h1>
-<h2 id="mirabox-—-固件更新" tabindex="-1"><a class="header-anchor" href="#mirabox-—-固件更新"><span>Mirabox — 固件更新</span></a></h2>
-<p>固件更新为 Stream Dock 提供最新的改进和错误修复。</p>
-<p><strong>注意：</strong> 执行固件更新时，确保更新不中断至关重要。更新时，请确保满足以下条件：</p>
-<ul>
-<li><strong>⚠️ 请勿关闭计算机。</strong></li>
-<li><strong>⚠️ 请勿断开 Stream Dock。</strong></li>
-<li><strong>⚠️ 请勿关闭或退出 Stream Dock 应用程序。</strong></li>
-</ul>
-<hr>
-<h3 id="_1-固件更新步骤" tabindex="-1"><a class="header-anchor" href="#_1-固件更新步骤"><span>1. 固件更新步骤</span></a></h3>
-<hr>
-<p>1） 确保已安装最新的 Stream Dock 软件</p>
-<ul>
-<li>检查 Stream Dock 软件中的更新</li>
-<li>从 <a href="https://miraboxdemo.key123.vip/downloads" target="_blank" rel="noopener noreferrer">https://miraboxdemo.key123.vip/downloads</a> 下载最新版本</li>
-</ul>
-<img src="@source/images/faqs/streamDock/streamDock_new.png" alt="Mirabox" width="100%">
-<p>2） 通过单击软件左上角商店按钮旁边的设置齿轮打开设置。</p>
-<img src="@source/images/faqs/streamDock/setting.png" alt="Mirabox">
-<p>3） 单击 <strong>“更新固件”</strong> 来进行更新。请勿在固件更新过程中断开 Stream Dock 的连接或关闭计算机。在设备重启的更新过程中，设备的按键可能会闪烁。</p>
-<img src="@source/images/faqs/streamDock/startUp.png" alt="Mirabox" width="100%">
-<p>4） 等到更新完成，然后像往常一样使用 Stream Dock。</p>
-<img src="@source/images/faqs/streamDock/completeUp.png" alt="Mirabox" width="100%">
-<h2 id="如何将开发好的插件或其他产品集合到stream-dock中运行" tabindex="-1"><a class="header-anchor" href="#如何将开发好的插件或其他产品集合到stream-dock中运行"><span>如何将开发好的插件或其他产品集合到stream Dock中运行</span></a></h2>
-<p>许多用户开发好了专署产品却不知道如何将其放到StreamDock中运行自己的产品，这对于这个问题在这里将进行详细分步骤讲解</p>
-<p><em>当您借组开发文档SDK开发好了您的专署产品，可以将打包好的文件夹放到plugin文件夹中，重启软件即可</em></p>
-<hr>
-<h3 id="_1-个人开发好的产品集合到软件运行的具体步骤" tabindex="-1"><a class="header-anchor" href="#_1-个人开发好的产品集合到软件运行的具体步骤"><span>1. 个人开发好的产品集合到软件运行的具体步骤</span></a></h3>
-<p>1）打开软件点击左上角设置按钮</p>
-<img src="@source/images/faqs/streamDock/setting.png" alt="Mirabox">
-<hr>
-<p>2）选择弹出框的头部导航<strong>通用</strong>选项，并点击<strong>打开应用文件夹</strong></p>
-<img src="@source/images/faqs/streamDock/open_folder.png" alt="Mirabox" width="100%">
-<hr>
-<p>3）之后会弹出一个文件交互页面，找到相应开发产品类型的文件夹，插件对应的是plugins，图标库对应的是icons</p>
-<p><em>软件的产品存储路径默认是 C:\Users\OptiPlex\AppData\Roaming\HotSpot\StreamDock</em></p>
-<p><em><strong>⚠️ 警示：请不要修改文件存储路径，因为这可能会导致stream Dock软件无法正常运行</strong></em></p>
-<img src="@source/images/faqs/streamDock/file_interaction.png" alt="Mirabox" width="100%">
-<hr>
-<p><strong>4）将开发好的产品文件夹放到相应产品类型目录下，这里以plugin为例</strong></p>
-<p><em><strong>⚠️ 注意：文件命名必须是反域名命名格式，用于标识软件包或应用程序的唯一性</strong></em></p>
-<p>例：com.mirabox.streamdock.calendar.sdPlugin</p>
-<ul>
-<li>
-<p><strong>com</strong>: 这通常是指公司或组织的域名的顶级域名（TLD）。在这里，&quot;com&quot; 表示商业组织（commercial），通常用于商业目的的软件包命名。</p>
-</li>
-<li>
-<p><strong>mirabox</strong>: 这是公司或组织的名称或者域名的一部分。它可以是公司名、品牌名或者域名的一部分。</p>
-</li>
-<li>
-<p><strong>streamdock</strong>: 这是产品或服务的名称，即对应软件名称。</p>
-</li>
-<li>
-<p><strong>calendar</strong>: 您所开发的产品的名称。</p>
-</li>
-<li>
-<p><strong>sdPlugin</strong>: 这标识您的产品为插件类型（plugin）。</p>
-</li>
-<li>
-<p><strong>sdIconPack</strong>: 这标识您的产品为图标类型 (icon)。</p>
-</li>
-</ul>
-<img src="@source/images/faqs/streamDock/plugin_folder.png" alt="Mirabox" width="100%">
-<hr>
-<h2 id="某些设备在软件中无法显示的问题" tabindex="-1"><a class="header-anchor" href="#某些设备在软件中无法显示的问题"><span>某些设备在软件中无法显示的问题</span></a></h2>
-<p><strong>当您下载并完成 Steam Dock 软件安装，部分设备型无法一次性行展示所有设备的列表</strong></p>
-<p><em>某些版本型号会存在这个现象，这可能是针对每个不同版本软件的具体设计</em></p>
-<img src="@source/images/faqs/streamDock/device.png" alt="Mirabox" width="100%">
-<p><strong>解决方式：</strong></p>
-<p>1）尝试重启软件</p>
-<p>2）点击重置数据</p>
-<img src="@source/images/faqs/streamDock/resetData.png" alt="Mirabox" width="100%">
-<p>3）连接到相应硬件设备后重启重启软件</p>
-<img src="@source/images/faqs/streamDock/device_all.png" alt="Mirabox" width="100%">
-<ul>
-<li>使用以上方法如仍无法解决，或存在其他任何疑惑，可以随时<a href="https://bbs.key123.vip/#/" target="_blank" rel="noopener noreferrer">联系我们</a></li>
-</ul>
-<h2 id="如何正确使用场景模块" tabindex="-1"><a class="header-anchor" href="#如何正确使用场景模块"><span>如何正确使用场景模块</span></a></h2>
-<h3 id="_1-场景简介" tabindex="-1"><a class="header-anchor" href="#_1-场景简介"><span>1. 场景简介</span></a></h3>
-<p>场景的出现让stream Dock的可用性和便捷性大大提升，用户的体验感受有了质的的飞跃。</p>
-<p><strong>stream Dock可以有多个场景</strong>，对此用户可以自定义自己的专属场景，包括场景的增加、删除、设计、导入、导出、命名等；场景之间可以来回切换，这对于Stream Dock的重度使用者非常友好。</p>
-<h3 id="_2-最新场景" tabindex="-1"><a class="header-anchor" href="#_2-最新场景"><span>2. 最新场景</span></a></h3>
-<p>在最新的Stream Dock 2.10.179.426 版本中默认内置了四个场景，分别是 Windos控制场景、常用网站场景、信息看板场景、音乐控制太场景</p>
-<ul>
-<li><strong>Windows控制场景</strong></li>
-</ul>
-<img src="@source/images/faqs/streamDock/scene.png" alt="Mirabox" width="100%">
-<hr>
-<ul>
-<li><strong>常用网站场景</strong></li>
-</ul>
-<img src="@source/images/faqs/streamDock/scene2.png" alt="Mirabox" width="100%">
-<hr>
-<ul>
-<li><strong>信息看板场景</strong></li>
-</ul>
-<img src="@source/images/faqs/streamDock/scene3.png" alt="Mirabox" width="100%">
-<hr>
-<ul>
-<li><strong>音乐控制太场景</strong></li>
-</ul>
-<img src="@source/images/faqs/streamDock/scene4.png" alt="Mirabox" width="100%">
-<h3 id="_3-新增场景" tabindex="-1"><a class="header-anchor" href="#_3-新增场景"><span>3. 新增场景</span></a></h3>
-<p>1）在场景列表区域或设置页面中点击添加图标便可创建一个新的场景</p>
-<img src="@source/images/faqs/streamDock/addScene.png" alt="Mirabox" width="100%">
-<p>2）新增场景后用户遍可以根据自己喜好随意设计专属场景</p>
-<img src="@source/images/faqs/streamDock/setScene.png" alt="Mirabox" width="100%">
-<h3 id="_4-删除场景" tabindex="-1"><a class="header-anchor" href="#_4-删除场景"><span>4. 删除场景</span></a></h3>
-<p>选中需要删除的场景后，在场景列表区域或设置页面中点击删除图标便可删除当前选中的场景删除，也可以在设置页面中直接右键场景选择删除</p>
-<img src="@source/images/faqs/streamDock/removeScene.png" alt="Mirabox" width="100%">
-<img src="@source/images/faqs/streamDock/clickScene.png" alt="Mirabox" width="100%">
-<h3 id="_5-场景重命名" tabindex="-1"><a class="header-anchor" href="#_5-场景重命名"><span>5. 场景重命名</span></a></h3>
-<p>双击或右击场景便可进行重命名</p>
-<img src="@source/images/faqs/streamDock/reSceenName.png" alt="Mirabox">
-<h3 id="_6-场景自动切换" tabindex="-1"><a class="header-anchor" href="#_6-场景自动切换"><span>6. 场景自动切换</span></a></h3>
-<p>场景的自动切换功能对于许多用户来说，知名度并不高；但如果您了解到此功能，它的实用性将会非常大，也许你将会对它爱不释手。</p>
-<p>自动切换的作用：当您给某个场景选中对应的应用程序后，以后在你使用改应用程序时，stream Dock将会自动切换到该场景</p>
-<p><strong>尝试一下:</strong></p>
-<p>1）这里以将选中Chrome应用程序绑定到我的场景中,绑定后将在场景对应列表项右边显示程序图标</p>
-<img src="@source/images/faqs/streamDock/bindScene.png" alt="Mirabox" width="100%">
-<hr>
-<img src="@source/images/faqs/streamDock/bindedScene.png" alt="Mirabox" width="100%">
-<p>2）切换到其他场景</p>
-<p>3）打开Chrome后，重新切回Stream Dock 将会自动选中Chrome所绑定的场景</p>
-<img src="@source/images/faqs/streamDock/myScene.png" alt="Mirabox" width="100%">
-<h3 id="_7-场景的导入导出" tabindex="-1"><a class="header-anchor" href="#_7-场景的导入导出"><span>7. 场景的导入导出</span></a></h3>
-<p>当您设计了一套适合的场景想要保存起来，或者想将改场景分享给朋友在其他电脑上使用，可以使用导入导出功能</p>
-<img src="@source/images/faqs/streamDock/importScene.png" alt="Mirabox" width="100%">
-<p>可以将设计好的场景一件导出，以文件的形式存在本地中,保存格式是.streamDockProfile的二进制文件，导入也选中相应格式的文件导入便可</p>
-<img src="@source/images/faqs/streamDock/streamDockProfile.png" alt="Mirabox" width="100%">
+<template><div><h1 id="streamdock系列问题" tabindex="-1"><a class="header-anchor" href="#streamdock系列问题"><span>streamDock系列问题</span></a></h1>
+<h2 id="如何将打开程序添加到按键上去" tabindex="-1"><a class="header-anchor" href="#如何将打开程序添加到按键上去"><span>如何将打开程序添加到按键上去？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>您可以将桌面的 APP 启动程序直接拖动到驱动中的空白按键位置，<br>
+或者从右侧工具栏拖动“打开”按钮，然后在下方选择需要启动的程序。</p>
+</div>
+<h2 id="该设备支持程序内的快捷键吗" tabindex="-1"><a class="header-anchor" href="#该设备支持程序内的快捷键吗"><span>该设备支持程序内的快捷键吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>如果您的程序支持热键操作，就可以自定义快捷键。</p>
+</div>
+<h2 id="如何下载驱动程序" tabindex="-1"><a class="header-anchor" href="#如何下载驱动程序"><span>如何下载驱动程序？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>【Windows驱动下载地址：key123.vip/win】<br>
+【macOS驱动下载地址：key123.vip/mac】<br>
+请复制网址到浏览器地址栏，按回车即可自动下载。</p>
+</div>
+<h2 id="是否支持在mac上使用" tabindex="-1"><a class="header-anchor" href="#是否支持在mac上使用"><span>是否支持在Mac上使用？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>是的，支持macOS系统。</p>
+</div>
+<h2 id="是否有系统版本要求" tabindex="-1"><a class="header-anchor" href="#是否有系统版本要求"><span>是否有系统版本要求？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>Windows系统需为 win7 64位及以上，<br>
+macOS 需为 10.15 及以上版本。</p>
+</div>
+<h2 id="该设备有电池吗" tabindex="-1"><a class="header-anchor" href="#该设备有电池吗"><span>该设备有电池吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>该设备不含电池，需要通过 USB 有线连接使用。</p>
+</div>
+<h2 id="是否提供使用视频或设置教程" tabindex="-1"><a class="header-anchor" href="#是否提供使用视频或设置教程"><span>是否提供使用视频或设置教程？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>安装后点击软件左上角的问号图标即可查看视频教程。</p>
+</div>
+<h2 id="可以用于股票操作吗" tabindex="-1"><a class="header-anchor" href="#可以用于股票操作吗"><span>可以用于股票操作吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>股票插件目前支持股市查询功能。</p>
+</div>
+<h2 id="cpu温度等数值不显示怎么办" tabindex="-1"><a class="header-anchor" href="#cpu温度等数值不显示怎么办"><span>CPU温度等数值不显示怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>您可以退出驱动软件，并以管理员身份重新启动 StreamDock。</p>
+</div>
+<h2 id="如何设置ps快捷键" tabindex="-1"><a class="header-anchor" href="#如何设置ps快捷键"><span>如何设置PS快捷键？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>软件商店内提供 PS 插件，下载后即可使用。<br>
+或者自行通过设置“热键”功能进行设置。</p>
+</div>
+<h2 id="该设备是否支持obs画面切换" tabindex="-1"><a class="header-anchor" href="#该设备是否支持obs画面切换"><span>该设备是否支持OBS画面切换？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>是的，支持，您可以下载 OBS 插件进行使用。</p>
+</div>
+<h2 id="可以设置一个按键打开多个链接吗" tabindex="-1"><a class="header-anchor" href="#可以设置一个按键打开多个链接吗"><span>可以设置一个按键打开多个链接吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>支持一键执行多项操作。</p>
+</div>
+<h2 id="如何将电脑上的应用程序添加到设备中" tabindex="-1"><a class="header-anchor" href="#如何将电脑上的应用程序添加到设备中"><span>如何将电脑上的应用程序添加到设备中？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>可以通过鼠标长按桌面的程序图标并将其拖入设备的空白按键位置即可。</p>
+</div>
+<h2 id="该设备支持抖音直播伴侣吗" tabindex="-1"><a class="header-anchor" href="#该设备支持抖音直播伴侣吗"><span>该设备支持抖音直播伴侣吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>是的，支持抖音直播伴侣。</p>
+</div>
+<h2 id="图标可以自定义吗" tabindex="-1"><a class="header-anchor" href="#图标可以自定义吗"><span>图标可以自定义吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>是的，图标支持自定义，您可以通过截图、本地上传或在线图库进行设置。</p>
+</div>
+<h2 id="该设备可以用于笔记本电脑吗" tabindex="-1"><a class="header-anchor" href="#该设备可以用于笔记本电脑吗"><span>该设备可以用于笔记本电脑吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>可以，该设备支持笔记本电脑使用。</p>
+</div>
+<h2 id="该设备能输入固定字符吗" tabindex="-1"><a class="header-anchor" href="#该设备能输入固定字符吗"><span>该设备能输入固定字符吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>可以，可通过设置文本输入的功能实现。</p>
+</div>
+<h2 id="数据线长度是多少" tabindex="-1"><a class="header-anchor" href="#数据线长度是多少"><span>数据线长度是多少？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>随设备附赠的 USB 数据线长度为 1.5 米。</p>
+</div>
+<h2 id="使用该设备是否必须保持软件运行" tabindex="-1"><a class="header-anchor" href="#使用该设备是否必须保持软件运行"><span>使用该设备是否必须保持软件运行？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>是的，驱动软件需在后台运行，所有功能和自定义设置均依赖于驱动软件。</p>
+</div>
+<h2 id="该设备是否支持vmix" tabindex="-1"><a class="header-anchor" href="#该设备是否支持vmix"><span>该设备是否支持vMix？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>支持，软件商店内提供 vMix 插件。</p>
+</div>
+<h2 id="能否自定义软件内部功能设置为快捷键" tabindex="-1"><a class="header-anchor" href="#能否自定义软件内部功能设置为快捷键"><span>能否自定义软件内部功能设置为快捷键？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>如果您的软件支持热键操作，则可以自定义快捷键。</p>
+</div>
+<h2 id="电脑端连接接口是什么类型" tabindex="-1"><a class="header-anchor" href="#电脑端连接接口是什么类型"><span>电脑端连接接口是什么类型？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>该设备通过 USB 接口与电脑连接。</p>
+</div>
+<h2 id="是否支持多页快捷方式" tabindex="-1"><a class="header-anchor" href="#是否支持多页快捷方式"><span>是否支持多页快捷方式？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>支持创建二级菜单，无限制翻页。</p>
+</div>
+<h2 id="如何下载插件" tabindex="-1"><a class="header-anchor" href="#如何下载插件"><span>如何下载插件？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>在驱动软件界面左上角点击第二个图标，进入插件商店，下载您需要的插件。</p>
+</div>
+<h2 id="平板电脑是否支持该设备" tabindex="-1"><a class="header-anchor" href="#平板电脑是否支持该设备"><span>平板电脑是否支持该设备？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>该设备仅支持在电脑上使用，平板电脑暂不支持。</p>
+</div>
+<h2 id="后台无法切换歌曲的原因是什么" tabindex="-1"><a class="header-anchor" href="#后台无法切换歌曲的原因是什么"><span>后台无法切换歌曲的原因是什么？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>请尝试退出驱动软件，然后以管理员身份重新运行软件。</p>
+</div>
+<h2 id="该设备支持永劫无间吗" tabindex="-1"><a class="header-anchor" href="#该设备支持永劫无间吗"><span>该设备支持永劫无间吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>支持，您可以使用该设备控制永劫无间游戏。</p>
+</div>
+<h2 id="该设备支持哪些操作系统-是否支持ubuntu" tabindex="-1"><a class="header-anchor" href="#该设备支持哪些操作系统-是否支持ubuntu"><span>该设备支持哪些操作系统？是否支持Ubuntu？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>该设备支持 Windows 和 macOS 系统，提供基于 Linux/Android 版本的 SDK。</p>
+</div>
+<h2 id="该设备是否支持欧卡2" tabindex="-1"><a class="header-anchor" href="#该设备是否支持欧卡2"><span>该设备是否支持欧卡2？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>支持，我们提供欧卡2插件。</p>
+</div>
+<h2 id="菜单可以设置多少层" tabindex="-1"><a class="header-anchor" href="#菜单可以设置多少层"><span>菜单可以设置多少层？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>您可以添加多个二级菜单，翻页数量不受限制。</p>
+</div>
+<h2 id="设备是否支持翻页功能" tabindex="-1"><a class="header-anchor" href="#设备是否支持翻页功能"><span>设备是否支持翻页功能？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>是的，设备支持翻页功能。</p>
+</div>
+<h2 id="设备使用时常死机怎么办" tabindex="-1"><a class="header-anchor" href="#设备使用时常死机怎么办"><span>设备使用时常死机怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>请尝试更换 USB 接口或数据线，或使用手机数据线进行测试。</p>
+</div>
+<h2 id="可以设置监控显卡、cpu的使用情况吗" tabindex="-1"><a class="header-anchor" href="#可以设置监控显卡、cpu的使用情况吗"><span>可以设置监控显卡、CPU的使用情况吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>可以，通过系统检测工具插件，可以实时显示 CPU、GPU 和 RAM 的使用情况。</p>
+</div>
+<h2 id="下载完软件后无法设置设备怎么办" tabindex="-1"><a class="header-anchor" href="#下载完软件后无法设置设备怎么办"><span>下载完软件后无法设置设备怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>您的电脑可能未识别到设备，请尝试重新连接数据线，或者更换 USB 接口。</p>
+</div>
+<h2 id="如何在一台电脑上连接两个设备" tabindex="-1"><a class="header-anchor" href="#如何在一台电脑上连接两个设备"><span>如何在一台电脑上连接两个设备？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>如果是不同型号的设备，支持在一台电脑上同时连接两个。<br>
+同型号设备则不支持。</p>
+</div>
+<h2 id="该设备支持uos系统吗" tabindex="-1"><a class="header-anchor" href="#该设备支持uos系统吗"><span>该设备支持UOS系统吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>暂不支持，目前仅支持 Windows 和 macOS 系统的应用程序，<br>
+以及 Linux/Android 版本的 SDK。</p>
+</div>
+<h2 id="按键无反应如何解决" tabindex="-1"><a class="header-anchor" href="#按键无反应如何解决"><span>按键无反应如何解决？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>请尝试拔插数据线，或更换 USB 接口进行测试。</p>
+</div>
+<h2 id="如何将常用软件添加到设备中" tabindex="-1"><a class="header-anchor" href="#如何将常用软件添加到设备中"><span>如何将常用软件添加到设备中？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>使用鼠标左键按住程序或文件图标，直接拖动至设备空白按键位置即可。</p>
+</div>
+<h2 id="是否可以指定不同网站使用不同浏览器打开" tabindex="-1"><a class="header-anchor" href="#是否可以指定不同网站使用不同浏览器打开"><span>是否可以指定不同网站使用不同浏览器打开？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>该设备只能从电脑的默认浏览器中打开网页，无法指定不同浏览器。</p>
+</div>
+<h2 id="如何设置cpu、硬盘、显卡的温度监控" tabindex="-1"><a class="header-anchor" href="#如何设置cpu、硬盘、显卡的温度监控"><span>如何设置CPU、硬盘、显卡的温度监控？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>打开插件商店，下载“系统监视器”插件，<br>
+然后从右侧工具栏将其拖入设备中即可使用。</p>
+</div>
+<h2 id="新到的设备-连接主机后软件识别不到-怎么办" tabindex="-1"><a class="header-anchor" href="#新到的设备-连接主机后软件识别不到-怎么办"><span>新到的设备，连接主机后软件识别不到，怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p><strong>该问题主要是因为USB接口连接数据传输不正常导致的。请尝试以下解决方法：</strong></p>
+<ol>
+<li>更换 USB 连接线。</li>
+<li>更换 USB 连接口，尽量使用主板直接连接的 USB 接口，不要通过 hub 或转接板。</li>
+</ol>
+</div>
+<h2 id="mac系统中热键无法读取键盘录入怎么办" tabindex="-1"><a class="header-anchor" href="#mac系统中热键无法读取键盘录入怎么办"><span>Mac系统中热键无法读取键盘录入怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>打开苹果电脑，选择“系统偏好设置”，<br>
+在“隐私与安全性” → “辅助功能”中，打开“Stream Dock”后面的开关。<br>
+此外，在“隐私与安全性” → “自动化”部分也需要将其打开。</p>
+</div>
+<h2 id="开机自启动不成功-或以管理员启动无法开机启动怎么办" tabindex="-1"><a class="header-anchor" href="#开机自启动不成功-或以管理员启动无法开机启动怎么办"><span>开机自启动不成功，或以管理员启动无法开机启动怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>首先打开注册表，修改“EnableLUA”的值为“0”。<br>
+路径为：<code v-pre>计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</code></p>
+</div>
+<h2 id="场景智能跟随设置后不起作用怎么办" tabindex="-1"><a class="header-anchor" href="#场景智能跟随设置后不起作用怎么办"><span>场景智能跟随设置后不起作用怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>点击软件程序的“X”，让后台程序最小化到托盘，<br>
+然后智能场景跟随即可生效。</p>
+</div>
+<h2 id="stream-dock设备在macos上热键无法使用组合键怎么办" tabindex="-1"><a class="header-anchor" href="#stream-dock设备在macos上热键无法使用组合键怎么办"><span>Stream Dock设备在MacOS上热键无法使用组合键怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>点击读取键盘输入，然后在键盘上按下对应的组合键。</p>
+</div>
+<h2 id="多台设备在一台电脑上是否可以同时使用" tabindex="-1"><a class="header-anchor" href="#多台设备在一台电脑上是否可以同时使用"><span>多台设备在一台电脑上是否可以同时使用？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>最新的软件程序允许同时使用和编辑多台不同型号的硬件设备。</p>
+</div>
+<h2 id="如何使用工具箱的打开功能" tabindex="-1"><a class="header-anchor" href="#如何使用工具箱的打开功能"><span>如何使用工具箱的打开功能？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>打开功能可以在属性编辑框内找到程序或文件路径，<br>
+也可以将桌面上的 EXE 图标直接插入到按键框。<br>
+具体操作请参考以下视频： <a href="https://bbs.key123.vip/forum.php?mod=viewthread&amp;tid=687&amp;highlight=UWP" target="_blank" rel="noopener noreferrer">点击观看</a></p>
+</div>
+<h2 id="时间插件中的倒计时功能如何使用" tabindex="-1"><a class="header-anchor" href="#时间插件中的倒计时功能如何使用"><span>时间插件中的倒计时功能如何使用？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>先将“倒计时”功能选项拖入按键，设置倒计时时间，按下按键即可启动倒计时；<br>
+再次按下即可暂停，双击则恢复到初始状态。</p>
+</div>
+<h2 id="场景是否具备一键导入导出功能" tabindex="-1"><a class="header-anchor" href="#场景是否具备一键导入导出功能"><span>场景是否具备一键导入导出功能？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>支持。请在设置 → 场景功能中进行场景的导入导出。</p>
+</div>
+<h2 id="电脑上打开两个音乐播放器时-如何控制不同播放器" tabindex="-1"><a class="header-anchor" href="#电脑上打开两个音乐播放器时-如何控制不同播放器"><span>电脑上打开两个音乐播放器时，如何控制不同播放器？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>多媒体控制功能是系统提供的，无法同时控制两个及以上的音乐播放器。</p>
+</div>
+<h2 id="软件智能跟随设置了不起作用怎么办" tabindex="-1"><a class="header-anchor" href="#软件智能跟随设置了不起作用怎么办"><span>软件智能跟随设置了不起作用怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>设置好场景对应的程序名后，点击程序右上角的“X”按钮，<br>
+将其最小化到托盘，即可生效。</p>
+</div>
+<h2 id="截取图标失效-怎么办" tabindex="-1"><a class="header-anchor" href="#截取图标失效-怎么办"><span>截取图标失效，怎么办？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>有可能是杀毒软件清理掉了截图的支持文件，<br>
+请将安装程序加入杀毒软件的白名单。</p>
+</div>
+<h2 id="js插件跨域失效的问题" tabindex="-1"><a class="header-anchor" href="#js插件跨域失效的问题"><span>JS插件跨域失效的问题</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>在 Windows 下使用 JS 插件（例如 Home Assistant）时，可能会遇到无法加载的问题。<br>
+可以尝试以管理员身份运行程序。</p>
+</div>
+<h2 id="如何实现excel表单切换" tabindex="-1"><a class="header-anchor" href="#如何实现excel表单切换"><span>如何实现Excel表单切换？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>找到对应的切换快捷键，并在设备后台设置相应快捷键即可。</p>
+</div>
+<h2 id="如何解决systemmonitor-exe弹窗或无法拖动图标加入场景的问题" tabindex="-1"><a class="header-anchor" href="#如何解决systemmonitor-exe弹窗或无法拖动图标加入场景的问题"><span>如何解决SystemMonitor.exe弹窗或无法拖动图标加入场景的问题？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>可以通过修改注册表解决：</p>
+<ol>
+<li>按下 <code v-pre>Windows+R</code>，输入 <code v-pre>regedit</code> 并回车；</li>
+<li>找到 <code v-pre>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</code>；</li>
+<li>修改 <code v-pre>EnableLUA</code> 值为 <code v-pre>0</code>，确定后重启电脑。</li>
+</ol>
+</div>
+<h2 id="软件能否安装其他语言" tabindex="-1"><a class="header-anchor" href="#软件能否安装其他语言"><span>软件能否安装其他语言？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>我们的软件目前支持 8 种语言，暂不支持用户自行添加其他语言。</p>
+</div>
+<h2 id="更新2-9-175版本时-有时会提示下载超时-如何解决" tabindex="-1"><a class="header-anchor" href="#更新2-9-175版本时-有时会提示下载超时-如何解决"><span>更新2.9.175版本时，有时会提示下载超时，如何解决？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>这与网络速度和服务器状态有关，建议多尝试几次。</p>
+</div>
+<h2 id="windows主进程必须访问网络吗" tabindex="-1"><a class="header-anchor" href="#windows主进程必须访问网络吗"><span>Windows主进程必须访问网络吗？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>如果只使用本地功能，则不需要连接互联网。</p>
+</div>
+<h2 id="我如何知道我的键盘型号" tabindex="-1"><a class="header-anchor" href="#我如何知道我的键盘型号"><span>我如何知道我的键盘型号？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>请观看此视频了解如何使用该设备：<br>
+<a href="http://bbs.key123.vip/forum.php?...&amp;extra=page%3D2" target="_blank" rel="noopener noreferrer">http://bbs.key123.vip/forum.php?...&amp;extra=page%3D2</a></p>
+</div>
+<h2 id="能否适配vtuber-studio中的按键表情" tabindex="-1"><a class="header-anchor" href="#能否适配vtuber-studio中的按键表情"><span>能否适配Vtuber Studio中的按键表情？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>该插件已经完成开发，可通过以下链接下载使用：<br>
+<a href="https://bbs.key123.vip/forum.php?mod=viewthread&amp;tid=309&amp;extra=page%3D1" target="_blank" rel="noopener noreferrer">https://bbs.key123.vip/forum.php?mod=viewthread&amp;tid=309&amp;extra=page%3D1</a></p>
+</div>
+<h2 id="如何实现开机自启动和最小化功能" tabindex="-1"><a class="header-anchor" href="#如何实现开机自启动和最小化功能"><span>如何实现开机自启动和最小化功能？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>该功能已经开发，可以在程序设置中的“通用”页面找到。</p>
+</div>
+<h2 id="windows防火墙提示systemmonitor-exe弹窗-如何解决" tabindex="-1"><a class="header-anchor" href="#windows防火墙提示systemmonitor-exe弹窗-如何解决"><span>Windows防火墙提示SystemMonitor.exe弹窗，如何解决？</span></a></h2>
+<div class="custom-container tip"><p class="custom-container-title">解疑</p>
+<p>解决方法详见：<br>
+<a href="https://bbs.key123.vip/forum.php?mod=viewthread&amp;tid=325&amp;extra=page%3D1" target="_blank" rel="noopener noreferrer">https://bbs.key123.vip/forum.php?mod=viewthread&amp;tid=325&amp;extra=page%3D1</a></p>
+</div>
 </div></template>
 
 

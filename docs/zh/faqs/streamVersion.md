@@ -1,64 +1,133 @@
 ---
-title: streamDock 版本说明
+title: StreamDock Download
 ---
 
-# streamDock 版本说明
+## **Window Version History**
 
-## Stream Dock 2.10.179.426
+<div class="version-info">
+    <ul class='ul'>
+        <li class='li'><strong>Name</strong></li>
+        <li class='li'><strong>Version</strong></li>
+        <li class='li'><strong>Release Date</strong></li>
+        <li class='li'><strong>Package</strong></li>
+        <li class='li'><strong>Log File</strong></li>
+    </ul>
+</div>
 
-### 1. 发行时间
+<div v-for="entry in windowList" :key="entry.version" class='version-info'>
+    <ul class='ul'>
+        <li class='li'>{{ entry.name }}</li>
+        <li class='li'>{{ entry.version }}</li>
+        <li class='li'>{{ entry.release_time }}</li>
+        <li class='li'><a v-if="entry.download" :href="entry.download">Download</a></li>
+        <li class='li'><a v-if="entry.download" :href="entry.download_log">View log</a></li>
+    </ul>
+</div>
 
-- 2024-5-10
+####
+####
 
-### 2. 更新内容
-- 支持不同型号的多设备同时使用
-- 支持N3设备使用及其默认场景自动生成
-- 网站功能实现自动获取链接的图标
-- 增加了热键切换功能项
-- 导出全部场景功能
-- 导出选中的一个或多个场景
-- 导入一个或多个场景功能
-- 导入一个文件夹所有场景功能
-- N3旋钮切换页面功能可6个页面同时实现
+## **Mac Version History**
 
-## Stream Dock 2.9.178
+<div class="version-info">
+    <ul class='ul'>
+        <li class='li'><strong>Name</strong></li>
+        <li class='li'><strong>Version</strong></li>
+        <li class='li'><strong>Release Date</strong></li>
+        <li class='li'><strong>Package</strong></li>
+        <li class='li'><strong>Log File</strong></li>
+    </ul>
+</div>
 
-### 1. 发行时间
+<div v-for="entry in macList" :key="entry.version" class='version-info'>
+    <ul class='ul'>
+        <li class='li'>{{ entry.name }}</li>
+        <li class='li'>{{ entry.version }}</li>
+        <li class='li'>{{ entry.release_time }}</li>
+        <li class='li'><a v-if="entry.download" :href="entry.download">Download</a></li>
+        <li class='li'><a v-if="entry.download" :href="entry.download_log">View log</a></li>
+    </ul>
+</div>
 
-- 2024-2-15
+<script setup>
+import axios from 'axios';
+import {ref,onBeforeMount} from 'vue'
 
-### 2. 更新内容
-- 解决"打开"功能管理员权限问题，增强软件稳定性 
-- 更新工具箱、音频播放器、操作流新图标
+onBeforeMount(async ()=>{
+    await fetchFirmware();
+})
 
-## Stream Dock 2.9.175
+async function fetchFirmware() {
+  try {
+    const res = await axios.get('https://cdn1.key123.vip/StreamDock/log/softwareVersionList.json'); 
+    if(res.data){
+        windowList.value = res.data.StreamDockWinList
+        macList.value = res.data.StreamDockMacList
+    }
+  } catch (err) {
+    console.error(' 请求失败:', err);
+  }
+}
 
-### 1. 发行时间
+const windowList = ref([
+    
+])
 
-- 2023-9-10
+const macList = ref([
+ 
+])
 
-### 2. 更新内容
-- 鼠标事件中增加了坐标显示
-- 增强打开功能解决权限不够无法打开相关程序的问题
-- 优化293操作时图标会花屏的问题
-- 优化后台图标显示与设备图标不一致的问题
-- 增加了0108D英文默认场景
-- 修复了打开操作因为权限不够无法打开相关程序的问题
-- 修复了部分设备切换到空场景时设备界面不会刷新的问题
-- 优化图标显示，解决了软件图标和设备图标显示不一致的问题
+const download = () => {
+  window.open("https://cdn1.key123.vip/Craft/historicalVersion/MiraBox_Craft-HistoryDownloader.exe");  // 替换为实际文件URL 
+};
+</script>
 
-## Stream Dock 2.9.174
 
-### 1. 发行时间
 
-- 2023-4-10
-
-### 2. 更新内容
-- 将核心配置文件放到资源文件中
-- 前往指定页面的动作改成显示指定页面值
-- 切换场景动作增加上一个场景选项
-- 给文本操作和密码操作添加输入方式选择选项
-- 将最大字体大小修改成42
-- 导入带页码的场景时，主页面正常显示
-- 更改文本换行也能正确输入
-- 优化并简化插件加载流程
+<style scoped>
+  .version-box{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+  }
+  .version-info{
+    width:100%;
+    height:50px;
+    border-radius:12px;
+    margin-top:32px;
+  }
+  .ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: start;
+    align-items:start;
+    border-bottom: 1px solid ;
+    /* border-image: linear-gradient(to right, #000 10%, transparent 70%) 1; 渐变边框 */
+    border-image: linear-gradient(to right, transparent, rgba(128, 128, 128, 0.5), transparent) 1; 
+  }
+  .li{
+    width:23%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .downloadBtn{
+    /* width: 220px; */
+    cursor: pointer;
+    height: 50px;
+    background-color: #3eb893;
+    margin: 0px auto;
+    margin-top:20px;
+    margin-bottom:60px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+</style>

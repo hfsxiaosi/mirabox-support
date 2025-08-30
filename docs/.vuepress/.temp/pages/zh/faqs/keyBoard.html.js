@@ -1,5 +1,5 @@
 import comp from "D:/WORK/mirabox/mirabox-support/docs/.vuepress/.temp/pages/zh/faqs/keyBoard.html.vue"
-const data = JSON.parse("{\"path\":\"/zh/faqs/keyBoard.html\",\"title\":\"键盘系列问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"lang\":\"zh-CN\",\"title\":\"键盘系列问题\",\"description\":\"键盘页面的描述\"},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"zh/faqs/keyBoard.md\"}")
+const data = JSON.parse("{\"path\":\"/zh/faqs/keyBoard.html\",\"title\":\"键盘系列问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"lang\":\"zh-CN\",\"title\":\"键盘系列问题\",\"description\":\"键盘页面的描述\"},\"headers\":[],\"git\":{\"updatedTime\":1722070259000,\"contributors\":[{\"name\":\"xiaosi\",\"email\":\"512282129@qq.com\",\"commits\":1}]},\"filePathRelative\":\"zh/faqs/keyBoard.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

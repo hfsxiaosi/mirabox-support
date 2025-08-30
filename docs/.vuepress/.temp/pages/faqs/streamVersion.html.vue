@@ -1,63 +1,122 @@
-<template><div><h1 id="streamdock-imprint" tabindex="-1"><a class="header-anchor" href="#streamdock-imprint"><span>streamDock Imprint</span></a></h1>
-<h2 id="stream-dock-2-10-179-426" tabindex="-1"><a class="header-anchor" href="#stream-dock-2-10-179-426"><span>Stream Dock 2.10.179.426</span></a></h2>
-<h3 id="_1-issuing-time" tabindex="-1"><a class="header-anchor" href="#_1-issuing-time"><span>1. Issuing time</span></a></h3>
-<ul>
-<li>2024-5-10</li>
-</ul>
-<h3 id="_2-update-content" tabindex="-1"><a class="header-anchor" href="#_2-update-content"><span>2. Update content</span></a></h3>
-<ul>
-<li>Support simultaneous use of multiple devices of different models</li>
-<li>Support the use of N3 devices and the automatic generation of default scenarios</li>
-<li>Support website functions to automatically obtain link icons</li>
-<li>The branch network has added hotkey switching function items</li>
-<li>Export all scene functions</li>
-<li>Export the selected scene or scenes</li>
-<li>Export and import one or more scene functions</li>
-<li>Guide the import of all scene functions in one folder</li>
-<li>Guide N3 knob switching page function can be realized simultaneously on 6 pages</li>
-</ul>
-<h2 id="stream-dock-2-9-178" tabindex="-1"><a class="header-anchor" href="#stream-dock-2-9-178"><span>Stream Dock 2.9.178</span></a></h2>
-<h3 id="_1-issuing-time-1" tabindex="-1"><a class="header-anchor" href="#_1-issuing-time-1"><span>1. Issuing time</span></a></h3>
-<ul>
-<li>2024-2-15</li>
-</ul>
-<h3 id="_2-update-content-1" tabindex="-1"><a class="header-anchor" href="#_2-update-content-1"><span>2. Update content</span></a></h3>
-<ul>
-<li>Solve the problem of administrator rights in the &quot;open&quot; function and enhance software stability</li>
-<li>Unlock new icons for update toolbox, audio player, and operation flow</li>
-</ul>
-<h2 id="stream-dock-2-9-175" tabindex="-1"><a class="header-anchor" href="#stream-dock-2-9-175"><span>Stream Dock 2.9.175</span></a></h2>
-<h3 id="_1-issuing-time-2" tabindex="-1"><a class="header-anchor" href="#_1-issuing-time-2"><span>1. Issuing time</span></a></h3>
-<ul>
-<li>2023-9-10</li>
-</ul>
-<h3 id="_2-update-content-2" tabindex="-1"><a class="header-anchor" href="#_2-update-content-2"><span>2. Update content</span></a></h3>
-<ul>
-<li>Coordinate display has been added to the mouse event</li>
-<li>Solutions to enhance the opening function solve the problem of not having enough permissions to open related programs</li>
-<li>The problem that the icon will blur when optimizing the 293 operation</li>
-<li>Optimize and optimize the problem that the display of background icons is inconsistent with the device icon</li>
-<li>Added 0108D English default scene</li>
-<li>Fixed a problem where the opening operation could not open the related program due to insufficient permissions</li>
-<li>Fixed a problem where the device interface will not be refreshed when some devices switch to an empty scene</li>
-<li>Optimize icon display and solve the problem of inconsistent display of software icons and device icons</li>
-</ul>
-<h2 id="stream-dock-2-9-174" tabindex="-1"><a class="header-anchor" href="#stream-dock-2-9-174"><span>Stream Dock 2.9.174</span></a></h2>
-<h3 id="_1-issuing-time-3" tabindex="-1"><a class="header-anchor" href="#_1-issuing-time-3"><span>1. Issuing time</span></a></h3>
-<ul>
-<li>2023-4-10</li>
-</ul>
-<h3 id="_2-update-content-3" tabindex="-1"><a class="header-anchor" href="#_2-update-content-3"><span>2. Update content</span></a></h3>
-<ul>
-<li>Place the core configuration file in the resource file</li>
-<li>The action of going to the specified page changes to display the specified page value</li>
-<li>Switch scene actions to add previous scene options</li>
-<li>Add input method selection options to text operations and password operations</li>
-<li>Change the maximum font size to 42</li>
-<li>When importing a scene with page numbers, the main page displays normally</li>
-<li>Change the text wrap to enter correctly</li>
-<li>Optimize and simplify the plug-in loading process</li>
-</ul>
+<template><div><h2 id="window-version-history" tabindex="-1"><a class="header-anchor" href="#window-version-history"><span><strong>Window Version History</strong></span></a></h2>
+<div class="version-info">
+    <ul class='ul'>
+        <li class='li'><strong>Name</strong></li>
+        <li class='li'><strong>Version</strong></li>
+        <li class='li'><strong>Release Date</strong></li>
+        <li class='li'><strong>Package</strong></li>
+        <li class='li'><strong>Log File</strong></li>
+    </ul>
+</div>
+<div v-for="entry in windowList" :key="entry.version" class='version-info'>
+    <ul class='ul'>
+        <li class='li'>{{ entry.name }}</li>
+        <li class='li'>{{ entry.version }}</li>
+        <li class='li'>{{ entry.release_time }}</li>
+        <li class='li'><a v-if="entry.download" :href="entry.download">Download</a></li>
+        <li class='li'><a v-if="entry.download" :href="entry.download_log">View log</a></li>
+    </ul>
+</div>
+<h4 id="" tabindex="-1"><a class="header-anchor" href="#"><span></span></a></h4>
+<h4 id="-1" tabindex="-1"><a class="header-anchor" href="#-1"><span></span></a></h4>
+<h2 id="mac-version-history" tabindex="-1"><a class="header-anchor" href="#mac-version-history"><span><strong>Mac Version History</strong></span></a></h2>
+<div class="version-info">
+    <ul class='ul'>
+        <li class='li'><strong>Name</strong></li>
+        <li class='li'><strong>Version</strong></li>
+        <li class='li'><strong>Release Date</strong></li>
+        <li class='li'><strong>Package</strong></li>
+        <li class='li'><strong>Log File</strong></li>
+    </ul>
+</div>
+<div v-for="entry in macList" :key="entry.version" class='version-info'>
+    <ul class='ul'>
+        <li class='li'>{{ entry.name }}</li>
+        <li class='li'>{{ entry.version }}</li>
+        <li class='li'>{{ entry.release_time }}</li>
+        <li class='li'><a v-if="entry.download" :href="entry.download">Download</a></li>
+        <li class='li'><a v-if="entry.download" :href="entry.download_log">View log</a></li>
+    </ul>
+</div>
 </div></template>
 
 
+<script setup>
+import axios from 'axios';
+import {ref,onBeforeMount} from 'vue'
+
+onBeforeMount(async ()=>{
+    await fetchFirmware();
+})
+
+async function fetchFirmware() {
+  try {
+    const res = await axios.get('https://cdn1.key123.vip/StreamDock/log/softwareVersionList.json'); 
+    if(res.data){
+        windowList.value = res.data.StreamDockWinList
+        macList.value = res.data.StreamDockMacList
+    }
+  } catch (err) {
+    console.error(' 请求失败:', err);
+  }
+}
+
+const windowList = ref([
+    
+])
+
+const macList = ref([
+ 
+])
+
+const download = () => {
+  window.open("https://cdn1.key123.vip/Craft/historicalVersion/MiraBox_Craft-HistoryDownloader.exe");  // 替换为实际文件URL 
+};
+</script>
+<style scoped>
+  .version-box{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+  }
+  .version-info{
+    width:100%;
+    height:50px;
+    border-radius:12px;
+    margin-top:32px;
+  }
+  .ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: start;
+    align-items:start;
+    border-bottom: 1px solid ;
+    /* border-image: linear-gradient(to right, #000 10%, transparent 70%) 1; 渐变边框 */
+    border-image: linear-gradient(to right, transparent, rgba(128, 128, 128, 0.5), transparent) 1; 
+  }
+  .li{
+    width:23%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .downloadBtn{
+    /* width: 220px; */
+    cursor: pointer;
+    height: 50px;
+    background-color: #3eb893;
+    margin: 0px auto;
+    margin-top:20px;
+    margin-bottom:60px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+</style>

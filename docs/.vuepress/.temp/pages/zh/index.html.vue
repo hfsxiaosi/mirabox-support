@@ -49,16 +49,16 @@ footer: MIT Licensed | Copyright © 2018-present VuePress Community
 </div> -->
 <div class='content-box'>
   <div class='content-item'>
+    <h3>视频教程</h3>
+    <p>视频教程模块旨在通过简明直观的方式，帮助您快速掌握知识与操作技能。内容涵盖多个主题，从基础到高级，适合各类学习者。</p>
+  </div>
+  <div class='content-item'>
     <h3>常见问题</h3>
     <p>无论您是新用户还是经验丰富的老用户，这些FAQs都将为您提供有价值的信息和支持。</p>
   </div>
   <div class='content-item'>
     <h3>公告</h3>
     <p>这里是我们发布重要信息、更新和通知的专属空间。无论是关于产品的新功能、服务的变更，还是重要的系统公告，您都可以在这里第一时间获取到最新的信息。</p>
-  </div>
-  <div class='content-item'>
-    <h3>客户服务</h3>
-    <p>这里是我们专门为您提供支持和解答问题的中心。无论您遇到产品使用中的困惑、技术支持需求，或者是有关账户和订单的查询，我们的客户服务团队将竭诚为您服务。</p>
   </div>
 </div>
 <!-- URL -->

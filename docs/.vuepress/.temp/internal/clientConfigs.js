@@ -6,8 +6,7 @@ import * as clientConfig4 from 'D:/WORK/mirabox/mirabox-support/node_modules/@vu
 import * as clientConfig5 from 'D:/WORK/mirabox/mirabox-support/docs/.vuepress/.temp/prismjs/config.js'
 import * as clientConfig6 from 'D:/WORK/mirabox/mirabox-support/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import * as clientConfig7 from 'D:/WORK/mirabox/mirabox-support/node_modules/@vuepress/theme-default/lib/client/config.js'
-import * as clientConfig8 from 'D:/WORK/mirabox/mirabox-support/node_modules/@vuepress/plugin-search/lib/client/config.js'
-import * as clientConfig9 from 'D:/WORK/mirabox/mirabox-support/docs/.vuepress/client.ts'
+import * as clientConfig8 from 'D:/WORK/mirabox/mirabox-support/docs/.vuepress/client.ts'
 
 export const clientConfigs = [
   clientConfig0,
@@ -19,5 +18,4 @@ export const clientConfigs = [
   clientConfig6,
   clientConfig7,
   clientConfig8,
-  clientConfig9,
 ].map((m) => m.default).filter(Boolean)

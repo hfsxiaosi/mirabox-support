@@ -1,5 +1,5 @@
 import comp from "D:/WORK/mirabox/mirabox-support/docs/.vuepress/.temp/pages/faqs/dockingStation.html.vue"
-const data = JSON.parse("{\"path\":\"/faqs/dockingStation.html\",\"title\":\"dockingStation 系列问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"lang\":\"zh-CN\",\"title\":\"dockingStation 系列问题\",\"description\":\"streamDock页面的描述\"},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"faqs/dockingStation.md\"}")
+const data = JSON.parse("{\"path\":\"/faqs/dockingStation.html\",\"title\":\"dockingStation 系列问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"lang\":\"zh-CN\",\"title\":\"dockingStation 系列问题\",\"description\":\"streamDock页面的描述\"},\"headers\":[],\"git\":{\"updatedTime\":1722070259000,\"contributors\":[{\"name\":\"xiaosi\",\"email\":\"512282129@qq.com\",\"commits\":1}]},\"filePathRelative\":\"faqs/dockingStation.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

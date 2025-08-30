@@ -1,5 +1,5 @@
 import comp from "D:/WORK/mirabox/mirabox-support/docs/.vuepress/.temp/pages/faqs/lights.html.vue"
-const data = JSON.parse("{\"path\":\"/faqs/lights.html\",\"title\":\"灯光系列问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"lang\":\"zh-CN\",\"title\":\"灯光系列问题\",\"description\":\"灯光页面的描述\"},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"faqs/lights.md\"}")
+const data = JSON.parse("{\"path\":\"/faqs/lights.html\",\"title\":\"灯光系列问题\",\"lang\":\"zh-CN\",\"frontmatter\":{\"lang\":\"zh-CN\",\"title\":\"灯光系列问题\",\"description\":\"灯光页面的描述\"},\"headers\":[],\"git\":{\"updatedTime\":1722070259000,\"contributors\":[{\"name\":\"xiaosi\",\"email\":\"512282129@qq.com\",\"commits\":1}]},\"filePathRelative\":\"faqs/lights.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

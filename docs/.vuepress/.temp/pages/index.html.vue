@@ -24,7 +24,7 @@ home: true
 footer: Mirabox help documentation | © 2024 Mirabox
 --- -->
 <div style="text-align: center;">
-  <video autoplay loop muted playsinline  width="100%" height="300px">
+  <video autoplay loop muted playsinline  width="100%" height="400px">
     <source src="https://cdn1.key123.vip/marketplace/website/video/Light.webm" type="video/webm">
   </video>
 </div>
@@ -39,16 +39,16 @@ footer: Mirabox help documentation | © 2024 Mirabox
 </div> -->
 <div class='content-box'>
   <div class='content-item'>
+    <h3>Video Tutorial</h3>
+    <p>TThe video tutorial module aims to help you quickly master knowledge and skills in a clear and straightforward way. It covers a range of topics from basic to advanced, suitable for learners of all levels.</p>
+  </div>
+  <div class='content-item'>
     <h3>FAQs</h3>
     <p>Whether you are a new user or an experienced veteran user, these FAQs will provide you with valuable information and support.</p>
   </div>
   <div class='content-item'>
     <h3>Announcement</h3>
     <p>This is our exclusive space for posting important information, updates and notices. Whether it is about new product features, service changes, or important system announcements, you can get the latest information as soon as possible here.</p>
-  </div>
-  <div class='content-item'>
-    <h3>Customer service</h3>
-    <p>This is our center dedicated to providing support and answering your questions. Whether you encounter confusion in product use, technical support needs, or inquiries about accounts and orders, our customer service team will be happy to serve you.</p>
   </div>
 </div>
 <!-- URL -->

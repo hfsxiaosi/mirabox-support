@@ -1,64 +1,133 @@
 ---
-title: streamDock Imprint
+title: StreamDock Download
 ---
 
-# streamDock Imprint
+## **Window Version History**
 
-## Stream Dock 2.10.179.426
+<div class="version-info">
+    <ul class='ul'>
+        <li class='li'><strong>Name</strong></li>
+        <li class='li'><strong>Version</strong></li>
+        <li class='li'><strong>Release Date</strong></li>
+        <li class='li'><strong>Package</strong></li>
+        <li class='li'><strong>Log File</strong></li>
+    </ul>
+</div>
 
-### 1. Issuing time
+<div v-for="entry in windowList" :key="entry.version" class='version-info'>
+    <ul class='ul'>
+        <li class='li'>{{ entry.name }}</li>
+        <li class='li'>{{ entry.version }}</li>
+        <li class='li'>{{ entry.release_time }}</li>
+        <li class='li'><a v-if="entry.download" :href="entry.download">Download</a></li>
+        <li class='li'><a v-if="entry.download" :href="entry.download_log">View log</a></li>
+    </ul>
+</div>
 
-- 2024-5-10
+####
+####
 
-### 2. Update content
-- Support simultaneous use of multiple devices of different models
-- Support the use of N3 devices and the automatic generation of default scenarios
-- Support website functions to automatically obtain link icons
-- The branch network has added hotkey switching function items
-- Export all scene functions
-- Export the selected scene or scenes
-- Export and import one or more scene functions
-- Guide the import of all scene functions in one folder
-- Guide N3 knob switching page function can be realized simultaneously on 6 pages
+## **Mac Version History**
 
-## Stream Dock 2.9.178
+<div class="version-info">
+    <ul class='ul'>
+        <li class='li'><strong>Name</strong></li>
+        <li class='li'><strong>Version</strong></li>
+        <li class='li'><strong>Release Date</strong></li>
+        <li class='li'><strong>Package</strong></li>
+        <li class='li'><strong>Log File</strong></li>
+    </ul>
+</div>
 
-### 1. Issuing time
+<div v-for="entry in macList" :key="entry.version" class='version-info'>
+    <ul class='ul'>
+        <li class='li'>{{ entry.name }}</li>
+        <li class='li'>{{ entry.version }}</li>
+        <li class='li'>{{ entry.release_time }}</li>
+        <li class='li'><a v-if="entry.download" :href="entry.download">Download</a></li>
+        <li class='li'><a v-if="entry.download" :href="entry.download_log">View log</a></li>
+    </ul>
+</div>
 
-- 2024-2-15
+<script setup>
+import axios from 'axios';
+import {ref,onBeforeMount} from 'vue'
 
-### 2. Update content
-- Solve the problem of administrator rights in the "open" function and enhance software stability
-- Unlock new icons for update toolbox, audio player, and operation flow
+onBeforeMount(async ()=>{
+    await fetchFirmware();
+})
 
-## Stream Dock 2.9.175
+async function fetchFirmware() {
+  try {
+    const res = await axios.get('https://cdn1.key123.vip/StreamDock/log/softwareVersionList.json'); 
+    if(res.data){
+        windowList.value = res.data.StreamDockWinList
+        macList.value = res.data.StreamDockMacList
+    }
+  } catch (err) {
+    console.error(' 请求失败:', err);
+  }
+}
 
-### 1. Issuing time
+const windowList = ref([
+    
+])
 
-- 2023-9-10
+const macList = ref([
+ 
+])
 
-### 2. Update content
-- Coordinate display has been added to the mouse event
-- Solutions to enhance the opening function solve the problem of not having enough permissions to open related programs
-- The problem that the icon will blur when optimizing the 293 operation
-- Optimize and optimize the problem that the display of background icons is inconsistent with the device icon
-- Added 0108D English default scene
-- Fixed a problem where the opening operation could not open the related program due to insufficient permissions
-- Fixed a problem where the device interface will not be refreshed when some devices switch to an empty scene
-- Optimize icon display and solve the problem of inconsistent display of software icons and device icons
+const download = () => {
+  window.open("https://cdn1.key123.vip/Craft/historicalVersion/MiraBox_Craft-HistoryDownloader.exe");  // 替换为实际文件URL 
+};
+</script>
 
-## Stream Dock 2.9.174
 
-### 1. Issuing time
 
-- 2023-4-10
-
-### 2. Update content
-- Place the core configuration file in the resource file
-- The action of going to the specified page changes to display the specified page value
-- Switch scene actions to add previous scene options
-- Add input method selection options to text operations and password operations
-- Change the maximum font size to 42
-- When importing a scene with page numbers, the main page displays normally
-- Change the text wrap to enter correctly
-- Optimize and simplify the plug-in loading process
+<style scoped>
+  .version-box{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+  }
+  .version-info{
+    width:100%;
+    height:50px;
+    border-radius:12px;
+    margin-top:32px;
+  }
+  .ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: start;
+    align-items:start;
+    border-bottom: 1px solid ;
+    /* border-image: linear-gradient(to right, #000 10%, transparent 70%) 1; 渐变边框 */
+    border-image: linear-gradient(to right, transparent, rgba(128, 128, 128, 0.5), transparent) 1; 
+  }
+  .li{
+    width:23%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .downloadBtn{
+    /* width: 220px; */
+    cursor: pointer;
+    height: 50px;
+    background-color: #3eb893;
+    margin: 0px auto;
+    margin-top:20px;
+    margin-bottom:60px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+</style>

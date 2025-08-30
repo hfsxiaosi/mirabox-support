@@ -2,44 +2,86 @@
 export default {
   '/faqs/': [
     {
-      text: 'FAQs',
+      text: 'Space FAQs',
       collapsable: true,
       children: [
-        'space.md', 
-        'streamDock.md', 
-        'streamVersion.md',
-        'lights.md', 
-        'keyBoard.md', 
-        'dockingStation.md', 
+          'space.md',
       ],
     },
-  ],
-  '/announcement/': [
     {
-      text: '公告',
+      text: 'Software FAQs',
       children: [
-        'text.md',
+        'streamDock.md', 
+      ],
+    },
+    {
+      text: 'Software Version History',
+      children: [
+        'streamVersion.md', 
+        'craftVersion.md', 
       ],
     },
   ],
+  '/tutorials/': [
+    {
+      text: 'Video tutorial',
+      children: [
+        'new.md',
+        'basic.md',
+        'scene.md',
+        'Toolbox.md',
+        'macrokey.md',
+        'plugin.md'
+      ],
+    },
+  ],
+  // '/announcement/': [
+  //   {
+  //     text: '公告',
+  //     children: [
+  //       'text.md',
+  //     ],
+  //   },
+  // ],
   '/zh/faqs/': [
-    {
-      text: '常见问题',
-      children: [
-        'space.md',
-        'streamDock.md', 
-        'streamVersion.md',
-        'lights.md', 
-        'keyBoard.md', 
-        'dockingStation.md', 
-      ],
-    },
+      {
+        text: 'Space 常见问题',
+        children: [
+          'space.md',
+        ],
+      },
+      {
+        text: '软件 常见问题',
+        children: [
+          'streamDock.md', 
+        ],
+      },
+      {
+        text: '软件历史版本',
+        children: [
+          'streamVersion.md', 
+          'craftVersion.md', 
+        ],
+      },
   ],
-  '/zh/announcement/': [
+  // '/zh/announcement/': [
+  //   {
+  //     text: 'Announcements',
+  //     children: [
+  //       'text.md',
+  //     ],
+  //   },
+  // ],
+  '/zh/tutorials/': [
     {
-      text: 'Announcements',
+      text: '视频教程',
       children: [
-        'text.md',
+        'new.md',
+        'basic.md',
+        'scene.md',
+        'Toolbox.md',
+        'macrokey.md',
+        'plugin.md'
       ],
     },
   ],

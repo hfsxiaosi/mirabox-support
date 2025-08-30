@@ -4,223 +4,388 @@ title: streamDock series problems
 
 # **streamDock series problems**
 
-## Mirabox — Firmware update
+# streamDock series problems
 
-Firmware updates provide the latest improvements and bug fixes for Stream Dock.
+## How to assign a program to a button?
 
-**Attention:** When performing a firmware update, it is very important to ensure that the update is uninterrupted.When updating, please ensure that the following conditions are met:
+::: tip TIP
+You can drag the app’s shortcut from your desktop directly to the blank button space in the software,  
+or drag the "Open" button from the toolbar and select the program you want to launch.
+:::
 
-- **⚠️ Do not turn off the computer.**
-- **⚠️ Do not disconnect the Stream Dock.**
-- **⚠️ Do not close or exit the Stream Dock application.**
+## Does the device support hotkeys within programs?
 
-------
+::: tip TIP
+Yes, if your program supports hotkeys, you can assign them to the device.
+:::
 
-### 1. Firmware update steps
+## How do I download the driver?
 
-------
+::: tip TIP
+[Windows driver download: key123.vip/win] [macOS driver download: key123.vip/mac]  
+Copy and paste the URL into your browser’s address bar, and it will automatically download.
+:::
 
-1） Ensure that the latest Stream Dock software is installed.
+## Does it support Mac?
 
-- Check for updates in the Stream Dock software.
-- Download the latest version from [https://miraboxdemo.key123.vip/downloads](https://miraboxdemo.key123.vip/downloads) 
+::: tip Answer
+Yes, macOS is supported.
+:::
 
-<img src="../images/faqs/streamDock/streamDock_new.png" alt="Mirabox" width="100%">
+## Are there any system requirements?
 
-2） Open the settings by clicking the settings gear next to the store button in the upper left corner of the software.。
+::: tip Answer
+Windows must be Win7 64-bit or above, and macOS must be version 10.15 or above.
+:::
 
-<img src="../images/faqs/streamDock/setting.png" alt="Mirabox">
+## Does the device have a battery?
 
-3） Click **Update Firmware** to update.Do not disconnect the Stream Dock or turn off the computer during the firmware update.During the update process when the device is restarted, the key of the device may blink.
+::: tip Answer
+No, it does not have a battery and requires a USB cable for wired use.
+:::
 
-<img src="../images/faqs/streamDock/startUp.png" alt="Mirabox" width="100%">
+## Are there tutorial videos available?
 
-4） Wait until the update is complete, and then use Stream Dock as usual.
+::: tip Answer
+After installation, click the question mark icon in the top-left corner of the software to view tutorial videos.
+:::
 
-<img src="../images/faqs/streamDock/completeUp.png" alt="Mirabox" width="100%">
+## Can it be used for stock trading operations?
 
+::: tip Answer
+The stock plugin currently supports stock market queries.
+:::
 
-## How to assemble developed plug-ins or other products into stream Dock to run?
+## What if the CPU temperature and other values are not displaying?
 
-Many users have developed specialized products but don't know how to put them into the StreamDock to run their own products, which will be explained in detail step by step here.
+::: tip Answer
+Exit the driver software and restart Streamdock as an administrator.
+:::
 
-*When you have developed your specialized products through the group development documentation SDK, you can put the packaged folder in the plugin folder and restart the software.*
+## How to set up Photoshop hotkeys?
 
-------
+::: tip Answer
+Download the PS plugin from the software store or set it up manually using the "Hotkey" function.
+:::
 
-### 1. Specific steps of integrating products developed by individuals into software operation
+## Does the device support OBS scene switching?
 
+::: tip Answer
+Yes, it supports OBS. You can download the OBS plugin.
+:::
 
-1）Open the software and click the Settings button in the upper left corner.
+## Can I set one button to open multiple links?
 
-<img src="../images/faqs/streamDock/setting.png" alt="Mirabox">
+::: tip Answer
+Yes, it supports one-button multi-actions.
+:::
 
-------
+## How to add applications from the computer to the device?
 
+::: tip Answer
+Long-press the desktop icon of the program and drag it into the blank button space on the device.
+:::
 
-2）Select the head navigation **general** option of the pop-up box, and click **to open the application folder**
+## Does the device support Douyin (TikTok) Live Companion?
 
+::: tip Answer
+Yes, it supports Douyin Live Companion.
+:::
 
-<img src="../images/faqs/streamDock/open_folder.png" alt="Mirabox" width="100%">
+## Can I customize the icons?
 
-------
+::: tip Answer
+Yes, icons can be customized using screenshots, local uploads, or the online gallery.
+:::
 
-3）After that, a file interaction page will pop up to find the folder of the corresponding development product type. The plug-in corresponds to plugins, and the icon library corresponds to icons.
+## Can this device be used with a laptop?
 
+::: tip Answer
+Yes, it is compatible with laptops.
+:::
 
-*The product storage path of software is C:\Users\OptiPlex\AppData\Roaming\HotSpot\StreamDock by default. *
+## Can it input fixed text?
 
-***⚠️ Warning: Please do not modify the file storage path, as this may cause the stream Dock software to fail to operate normally.***
+::: tip Answer
+Yes, you can use the text input function to achieve this.
+:::
 
-<img src="../images/faqs/streamDock/file_interaction.png" alt="Mirabox" width="100%">
+## What is the length of the USB cable?
 
-------
+::: tip Answer
+The included USB cable is 1.5 meters long.
+:::
 
-**4）Put the developed product folder in the corresponding product type directory, taking plugin as an example.**
+## Does the software need to be running for the device to work?
 
+::: tip Answer
+Yes, the driver software must run in the background for all functions and custom settings to work.
+:::
 
-***⚠️ Note: the file naming must be in the anti-domain naming format, which is used to identify the uniqueness of the software package or application.***
+## Does it support vMix?
 
-Example：com.mirabox.streamdock.calendar.sdPlugin
+::: tip Answer
+Yes, the vMix plugin is available in the software store.
+:::
 
-- **com**: This usually refers to the top-level domain name (TLD) of the domain name of a company or organization. Here, "com" stands for commercial organization, which is usually used to name software packages for commercial purposes.
+## Can I assign software features as hotkeys?
 
-- **mirabox**: This is a part of the name or domain name of a company or organization. It can be part of the company name, brand name or domain name.
+::: tip Answer
+Yes, if your software supports hotkeys, you can assign them to the device.
+:::
 
-- **streamdock**: This is the name of the product or service, that is, the corresponding software name.
+## What type of interface does the device use to connect to the computer?
 
-- **calendar**: The name of the product you developed.
+::: tip Answer
+The device connects via USB.
+:::
 
-- **sdPlugin**: This identifies your product as a plugin.
+## Does it support multi-page shortcuts?
 
-- **sdIconPack**: This identifies your product as an icon.
+::: tip Answer
+Yes, you can create submenus with unlimited pages.
+:::
 
+## How do I download plugins?
 
-<img src="../images/faqs/streamDock/plugin_folder.png" alt="Mirabox" width="100%">
+::: tip Answer
+Click the second icon in the top-left corner of the software to enter the plugin store and download the plugins you need.
+:::
 
-------
+## Does it support tablets?
 
-## Some devices can not be displayed in the software.
+::: tip Answer
+The device is only compatible with computers and does not currently support tablets.
+:::
 
-**When you download and complete the installation of Steam Dock software, some devices cannot display the list of all devices at once.**
+## Why can’t I switch songs in the background?
 
-*Some versions and models will have this phenomenon, which may be the specific design for each different version of the software.*
+::: tip Answer
+Try restarting the driver software as an administrator.
+:::
 
-<img src="../images/faqs/streamDock/device.png" alt="Mirabox" width="100%">
+## Does the device support Naraka: Bladepoint?
 
-**Solution:**
+::: tip Answer
+Yes, the device can be used to control Naraka: Bladepoint.
+:::
 
-1）Try restarting the software.
+## What operating systems does it support? Does it support Ubuntu?
 
-2）Click Reset Data.
+::: tip Answer
+The device supports Windows and macOS. An SDK is provided for Linux/Android.
+:::
 
-<img src="../images/faqs/streamDock/resetData.png" alt="Mirabox" width="100%">
+## Does it support Euro Truck Simulator 2?
 
-3）Restart the restart software after connecting to the corresponding hardware device.
+::: tip Answer
+Yes, we provide a plugin for Euro Truck Simulator 2.
+:::
 
-<img src="../images/faqs/streamDock/device_all.png" alt="Mirabox" width="100%">
+## How many layers of menus can I set up?
 
+::: tip Answer
+You can add multiple submenus with no limit on the number of pages.
+:::
 
-- If you still can't solve the problem by using the above methods, or have any other doubts, you can [contact us](https://bbs.key123.vip/#/) at any time.
+## Does the device support page turning?
 
-## How to use scene module correctly
+::: tip Answer
+Yes, the device supports page turning.
+:::
 
-### 1. Brief introduction of the scene
+## What if the device frequently freezes?
 
-The appearance of the scene has greatly improved the usability and convenience of stream Dock, and the user experience has made a qualitative leap.
+::: tip Answer
+Try changing the USB port or cable, or test with a mobile phone cable.
+:::
 
-**Stream Dock can have multiple scenes.**,Users can customize their own exclusive scenes, including scene addition, deletion, design, import, export, naming, etc. Scenes can be switched back and forth, which is very friendly for heavy users of Stream Dock.
+## Can I monitor the usage of the GPU, CPU, etc.?
 
-### 2. Latest scene
+::: tip Answer
+Yes, through the system monitoring plugin, you can display real-time usage of the CPU, GPU, and RAM.
+:::
 
-In the latest version of Stream Dock 2.10.179.426, four scenes are built in by default, namely, Windos control scene, common website scene, information billboard scene and music control scene.
+## What if I can’t set up the device after downloading the software?
 
-- **Windows control scenario**
+::: tip Answer
+Your computer may not recognize the device. Try reconnecting the cable or using a different USB port.
+:::
 
-<img src="../images/faqs/streamDock/scene.png" alt="Mirabox" width="100%">
+## How can I connect two devices to one computer?
 
-------
+::: tip Answer
+You can connect two devices simultaneously if they are different models. The same model cannot be connected twice.
+:::
 
-- **Common website scenes**
+## Does it support UOS?
 
-<img src="../images/faqs/streamDock/scene2.png" alt="Mirabox" width="100%">
+::: tip Answer
+Not yet. It currently only supports Windows, macOS, and provides an SDK for Linux/Android.
+:::
 
-------
+## What should I do if the buttons are unresponsive?
 
-- **Information kanban scene**
+::: tip Answer
+Try reconnecting the cable or using a different USB port.
+:::
 
-<img src="../images/faqs/streamDock/scene3.png" alt="Mirabox" width="100%">
+## How to add frequently used software to the device?
 
-------
+::: tip Answer
+Drag the program or file icon into the blank button space on the device.
+:::
 
-- **Music control too scene**
+## Can I assign different browsers to open different websites?
 
-<img src="../images/faqs/streamDock/scene4.png" alt="Mirabox" width="100%">
+::: tip Answer
+The device can only open web pages using the default browser of your computer.
+:::
 
+## How do I monitor the temperature of the CPU, hard drive, and GPU?
 
-### 3. Add a scene
+::: tip Answer
+Download the "System Monitor" plugin from the plugin store, and drag it into the device from the toolbar.
+:::
 
-1）Click the add icon in the scene list area or the settings page to create a new scene.
+## What if my new device is not recognized by the software after connecting?
 
-<img src="../images/faqs/streamDock/addScene.png" alt="Mirabox" width="100%">
+::: tip Answer
+This issue may be caused by an unstable USB connection. Try the following:
+- Replace the USB cable.
+- Use a different USB port, preferably one directly connected to the motherboard, not through a hub or extension.
+:::
 
-2）After adding new scenes, users can design exclusive scenes at will according to their own preferences.
+## What if Mac hotkeys cannot detect keyboard input?
 
-<img src="../images/faqs/streamDock/setScene.png" alt="Mirabox" width="100%">
+::: tip Answer
+Go to "System Preferences" -> "Security & Privacy" -> "Accessibility" and enable "Stream Dock". Also, enable it in the "Automation" section.
+:::
 
+## What if auto-start on boot or administrator mode fails to work?
 
-### 4. Delete scene
+::: tip Answer
+Open the registry editor and set "EnableLUA" to 0. The path is: "Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System".
+:::
 
-After selecting the scene to be deleted, click the Delete icon in the scene list area or the setting page to delete the currently selected scene, or right-click the scene in the setting page to select Delete.
+## What should I do if smart scene switching does not work?
 
-<img src="../images/faqs/streamDock/removeScene.png" alt="Mirabox" width="100%">
+::: tip Answer
+- Ensure the app is correctly configured in the scene. Then, minimize the app to the tray, and smart scene switching will work.
+- Related video: https://www.bilibili.com/video/BV1eN4y1D7RJ/
+:::
 
+## What if MacOS hotkeys do not support key combinations?
 
-<img src="../images/faqs/streamDock/clickScene.png" alt="Mirabox" width="100%">
+::: tip Answer
+Click "Read Keyboard Input" and press the key combination on your keyboard.
+:::
 
+## Can multiple devices be used simultaneously on one computer?
 
-### 5. Scene renaming
+::: tip Answer
+The latest software supports the use and configuration of multiple different hardware devices simultaneously.
+:::
 
-双击或右击场景便可进行重命名
+## How to use the toolbox "Open" feature?
 
-<img src="../images/faqs/streamDock/reSceenName.png" alt="Mirabox">
+::: tip Answer
+You can find the program or file path in the property editor, or directly drag the EXE icon from your desktop into the button box. For detailed instructions, refer to this video: https://bbs.key123.vip/forum.php?mod=viewthread&tid=687&highlight=UWP
+:::
 
-### 6. Double-click or right-click the scene to rename it.
+## How to use the countdown timer in the time plugin?
 
-The automatic scene switching function is not well-known to many users; But if you know this function, it will be very practical, and maybe you will love it.
+::: tip Answer
+Drag the "Countdown" function to a button, set the timer, and press the button to start the countdown. Press again to pause; double-click to reset.
+:::
 
-Function of automatic switching: When you select the corresponding application for a scene, the stream Dock will automatically switch to the scene when you use the changed application in the future.
+## Can scenes be imported and exported with one click?
 
-**have a try:**
+::: tip Answer
+Yes, go to "Settings" -> "Scene" to import and export scenes.
+:::
 
-1）Here to bind the selected Chrome application to my scene. After binding, the program icon will be displayed on the right side of the corresponding list item in the scene.
+## How to control different music players when two are open on the computer?
 
+::: tip Answer
+The multimedia control function is system-provided and cannot control more than one player at a time.
+:::
 
-<img src="../images/faqs/streamDock/bindScene.png" alt="Mirabox" width="100%">
+## What if smart follow does not work after setup?
 
-------
+::: tip Answer
+After setting up the corresponding program name in the scene, click the "X" in the top-right corner to minimize the program to the tray, and the smart follow feature will activate.
+:::
 
-<img src="../images/faqs/streamDock/bindedScene.png" alt="Mirabox" width="100%">
+## What if the screenshot tool doesn’t work?
 
-2）Switch to another scene
+::: tip Answer
+Your antivirus software may have removed the supporting files. Add the installation directory to the antivirus software's whitelist.
+:::
 
-3）After opening Chrome, switching back to Stream Dock will automatically select the scene to which Chrome is bound.
+## What should I do about the JS plugin cross-origin issue?
 
-<img src="../images/faqs/streamDock/myScene.png" alt="Mirabox" width="100%">
+::: tip Answer
+When using JS plugins on Windows, if they fail to load, try running the program as an administrator.
+:::
 
-### 7. Import and export of scenes
+## How do I switch Excel forms?
 
-When you design a suitable scene and want to save it, or you want to share the changed scene with your friends and use it on other computers, you can use the import and export function.
+::: tip Answer
+Find the corresponding shortcut key and set it up in the device's backend.
+:::
 
-<img src="../images/faqs/streamDock/importScene.png" alt="Mirabox" width="100%">
+## How to fix the SystemMonitor.exe pop-up or inability to drag icons into scenes?
 
-You can export one piece of the designed scene, save it in the local file, save the binary file with the format of. streamDockProfile, and import the file with the corresponding format.
+::: tip Answer
+Modify the registry:
+- Press Windows+R, type regedit, and press Enter.
+- Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System.
+- Find EnableLUA, change its value to 0, and restart your computer.
+:::
 
-<img src="../images/faqs/streamDock/streamDockProfile.png" alt="Mirabox" width="100%">
+## Can the software be installed in other languages?
 
+::: tip Answer
+Our software currently supports 8 languages, and users cannot add additional languages themselves at this time.
+:::
 
+## When updating to new version, I sometimes get a "Download Timeout" message. How can I resolve this?
 
+::: tip Answer
+This issue is related to network speed and server status. We recommend trying again several times.
+:::
 
+## Does the Windows main process need internet access?
 
+::: tip Answer
+If you are only using local features, there is no need to connect to the internet.
+:::
 
+## How can I find out my device model?
 
+::: tip Answer
+Please watch this video to learn how to use the device:
+[http://bbs.key123.vip/forum.php?...&extra=page%3D2](http://bbs.key123.vip/forum.php?...&extra=page%3D2)
+:::
+
+## Can it support facial expressions through buttons in Vtuber Studio?
+
+::: tip Answer
+The plugin has been developed and can be downloaded via this link: 
+[https://bbs.key123.vip/forum.php?mod=viewthread&tid=309&extra=page%3D1](https://bbs.key123.vip/forum.php?mod=viewthread&tid=309&extra=page%3D1)
+
+:::
+
+## How can I enable startup and minimize-to-tray functions?
+
+::: tip Answer
+This feature has been developed and can be found on the "General" page in the program settings.
+:::
+
+## Windows Firewall prompts a SystemMonitor.exe pop-up. How can I resolve this?
+
+::: tip Answer
+Please refer to the following link for the solution: 
+[https://bbs.key123.vip/forum.php?mod=viewthread&tid=325&extra=page%3D1](https://bbs.key123.vip/forum.php?mod=viewthread&tid=325&extra=page%3D1)
+:::

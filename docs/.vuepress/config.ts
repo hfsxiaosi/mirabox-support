@@ -38,18 +38,18 @@ export default defineUserConfig({
   },
   pagePatterns: ['**/*.md', '!**/README.md', '!.vuepress', '!node_modules'],
   plugins: [
-    searchPlugin({
-      locales: {
-        '/': {
-          placeholder: 'Search',
-        },
-        '/zh/': {
-          placeholder: '搜索',
-        },
-      },
-      maxSuggestions: 100,
-      hotKeys: ['s', '/'],
-    }),
+    // searchPlugin({
+    //   locales: {
+    //     '/': {
+    //       placeholder: 'Search',
+    //     },
+    //     '/zh/': {
+    //       placeholder: '搜索',
+    //     },
+    //   },
+    //   maxSuggestions: 100,
+    //   hotKeys: ['s', '/'],
+    // }),
     // docsearchPlugin({
     //   appId: '你的应用ID',
     //   apiKey: '你的API密钥',
